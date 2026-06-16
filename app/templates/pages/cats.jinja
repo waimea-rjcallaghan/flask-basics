@@ -1,0 +1,25 @@
+{% extends "pages/_base.jinja" %}
+
+{% block content %}
+
+<h1>list of cats</h1>
+
+<p>the list below comes from data passed in... </p>
+
+<ul>
+
+    {% for cat in cats %}
+
+    <li>
+        {{ cat.name }} has id {{ cat.id }}
+        <a href="/cat/{{ cat.id }}">profile</a>
+        
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+
+
+{% endblock %}

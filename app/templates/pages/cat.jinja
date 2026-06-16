@@ -1,0 +1,11 @@
+{% extends "pages/_base.jinja" %}
+
+{% block content %}
+
+    <h1>{{ cat.name }}'s profile</h1>
+
+    <img src="/static/css/images/{{ cat.image }}" alt="picture of {{ cat.name }}">
+
+    <p>{{ cat.name }} is cool and has id:{{ cat.id }}</p>
+
+{% endblock %}    

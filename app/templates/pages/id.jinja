@@ -1,0 +1,16 @@
+{% extends "pages/_base.jinja" %}
+
+{% block content %}
+
+<h1>page for thing no. {{ id }}</h1>
+
+<p>this id came from the url</p>
+
+{% if id == 67 %}
+
+<h2>67</h2>
+
+{% endif %}
+
+
+{% endblock %}
